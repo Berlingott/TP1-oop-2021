@@ -251,6 +251,33 @@ LigueSportive_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.s
 .PHONY : LigueSportive_class.cpp.s
 
+MenuPrincipal_class.o: MenuPrincipal_class.cpp.o
+
+.PHONY : MenuPrincipal_class.o
+
+# target to build an object file
+MenuPrincipal_class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/MenuPrincipal_class.cpp.o
+.PHONY : MenuPrincipal_class.cpp.o
+
+MenuPrincipal_class.i: MenuPrincipal_class.cpp.i
+
+.PHONY : MenuPrincipal_class.i
+
+# target to preprocess a source file
+MenuPrincipal_class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/MenuPrincipal_class.cpp.i
+.PHONY : MenuPrincipal_class.cpp.i
+
+MenuPrincipal_class.s: MenuPrincipal_class.cpp.s
+
+.PHONY : MenuPrincipal_class.s
+
+# target to generate assembly for a file
+MenuPrincipal_class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/MenuPrincipal_class.cpp.s
+.PHONY : MenuPrincipal_class.cpp.s
+
 Stade_class.o: Stade_class.cpp.o
 
 .PHONY : Stade_class.o
@@ -326,6 +353,9 @@ help:
 	@echo "... LigueSportive_class.o"
 	@echo "... LigueSportive_class.i"
 	@echo "... LigueSportive_class.s"
+	@echo "... MenuPrincipal_class.o"
+	@echo "... MenuPrincipal_class.i"
+	@echo "... MenuPrincipal_class.s"
 	@echo "... Stade_class.o"
 	@echo "... Stade_class.i"
 	@echo "... Stade_class.s"

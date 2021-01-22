@@ -1,6 +1,6 @@
 #include <iostream>
-
+#include "MenuPrincipal_class.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    MenuPrincipal_class menuprincipal;
+    menuprincipal.afficherInitialisation();
 }

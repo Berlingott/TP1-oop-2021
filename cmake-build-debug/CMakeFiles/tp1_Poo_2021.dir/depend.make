@@ -13,8 +13,12 @@ CMakeFiles/tp1_Poo_2021.dir/Joueur_class.cpp.o: ../Joueur_class.h
 CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.o: ../LigueSportive_class.cpp
 CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.o: ../LigueSportive_class.h
 
+CMakeFiles/tp1_Poo_2021.dir/MenuPrincipal_class.cpp.o: ../MenuPrincipal_class.cpp
+CMakeFiles/tp1_Poo_2021.dir/MenuPrincipal_class.cpp.o: ../MenuPrincipal_class.h
+
 CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.o: ../Stade_class.cpp
 CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.o: ../Stade_class.h
 
+CMakeFiles/tp1_Poo_2021.dir/main.cpp.o: ../MenuPrincipal_class.h
 CMakeFiles/tp1_Poo_2021.dir/main.cpp.o: ../main.cpp
 

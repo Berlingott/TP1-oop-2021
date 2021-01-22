@@ -104,6 +104,12 @@
 		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.h">
 			<Option target="tp1_Poo_2021"/>
 		</Unit>
+		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/MenuPrincipal_class.cpp">
+			<Option target="tp1_Poo_2021"/>
+		</Unit>
+		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/MenuPrincipal_class.h">
+			<Option target="tp1_Poo_2021"/>
+		</Unit>
 		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/Stade_class.cpp">
 			<Option target="tp1_Poo_2021"/>
 		</Unit>

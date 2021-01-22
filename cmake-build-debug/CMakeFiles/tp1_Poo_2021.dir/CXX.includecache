@@ -6,43 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Club_class.cpp
-Club_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Club_class.h
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Club_class.h
-chrono
--
-string
+/Users/simonduchesne/Desktop/tp1 Poo 2021/MenuPrincipal_class.cpp
+MenuPrincipal_class.h
+/Users/simonduchesne/Desktop/tp1 Poo 2021/MenuPrincipal_class.h
+iostream
 -
 
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.cpp
-Entraineur_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.h
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.h
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.cpp
-Joueur_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.h
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.h
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.cpp
-LigueSportive_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.h
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.h
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Stade_class.cpp
-Stade_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Stade_class.h
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Stade_class.h
-string
--
+/Users/simonduchesne/Desktop/tp1 Poo 2021/MenuPrincipal_class.h
 
 /Users/simonduchesne/Desktop/tp1 Poo 2021/main.cpp
 iostream
 -
+MenuPrincipal_class.h
+/Users/simonduchesne/Desktop/tp1 Poo 2021/MenuPrincipal_class.h
 
