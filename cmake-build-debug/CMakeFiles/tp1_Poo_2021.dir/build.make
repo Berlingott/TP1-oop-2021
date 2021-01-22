@@ -116,11 +116,53 @@ CMakeFiles/tp1_Poo_2021.dir/Joueur_class.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tp1_Poo_2021.dir/Joueur_class.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.cpp" -o CMakeFiles/tp1_Poo_2021.dir/Joueur_class.cpp.s
 
+CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.o: CMakeFiles/tp1_Poo_2021.dir/flags.make
+CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.o: ../Entraineur_class.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/simonduchesne/Desktop/tp1 Poo 2021/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.o -c "/Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.cpp"
+
+CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.cpp" > CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.i
+
+CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.cpp" -o CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.s
+
+CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.o: CMakeFiles/tp1_Poo_2021.dir/flags.make
+CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.o: ../LigueSportive_class.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/simonduchesne/Desktop/tp1 Poo 2021/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.o -c "/Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.cpp"
+
+CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.cpp" > CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.i
+
+CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.cpp" -o CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.s
+
+CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.o: CMakeFiles/tp1_Poo_2021.dir/flags.make
+CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.o: ../Stade_class.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/simonduchesne/Desktop/tp1 Poo 2021/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.o -c "/Users/simonduchesne/Desktop/tp1 Poo 2021/Stade_class.cpp"
+
+CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/simonduchesne/Desktop/tp1 Poo 2021/Stade_class.cpp" > CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.i
+
+CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/simonduchesne/Desktop/tp1 Poo 2021/Stade_class.cpp" -o CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.s
+
 # Object files for target tp1_Poo_2021
 tp1_Poo_2021_OBJECTS = \
 "CMakeFiles/tp1_Poo_2021.dir/main.cpp.o" \
 "CMakeFiles/tp1_Poo_2021.dir/Club_class.cpp.o" \
-"CMakeFiles/tp1_Poo_2021.dir/Joueur_class.cpp.o"
+"CMakeFiles/tp1_Poo_2021.dir/Joueur_class.cpp.o" \
+"CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.o" \
+"CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.o" \
+"CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.o"
 
 # External object files for target tp1_Poo_2021
 tp1_Poo_2021_EXTERNAL_OBJECTS =
@@ -128,9 +170,12 @@ tp1_Poo_2021_EXTERNAL_OBJECTS =
 tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/main.cpp.o
 tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/Club_class.cpp.o
 tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/Joueur_class.cpp.o
+tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.o
+tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.o
+tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.o
 tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/build.make
 tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/simonduchesne/Desktop/tp1 Poo 2021/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable tp1_Poo_2021"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/simonduchesne/Desktop/tp1 Poo 2021/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable tp1_Poo_2021"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tp1_Poo_2021.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

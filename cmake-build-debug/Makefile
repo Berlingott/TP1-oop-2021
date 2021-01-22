@@ -170,6 +170,33 @@ Club_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Club_class.cpp.s
 .PHONY : Club_class.cpp.s
 
+Entraineur_class.o: Entraineur_class.cpp.o
+
+.PHONY : Entraineur_class.o
+
+# target to build an object file
+Entraineur_class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.o
+.PHONY : Entraineur_class.cpp.o
+
+Entraineur_class.i: Entraineur_class.cpp.i
+
+.PHONY : Entraineur_class.i
+
+# target to preprocess a source file
+Entraineur_class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.i
+.PHONY : Entraineur_class.cpp.i
+
+Entraineur_class.s: Entraineur_class.cpp.s
+
+.PHONY : Entraineur_class.s
+
+# target to generate assembly for a file
+Entraineur_class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.s
+.PHONY : Entraineur_class.cpp.s
+
 Joueur_class.o: Joueur_class.cpp.o
 
 .PHONY : Joueur_class.o
@@ -196,6 +223,60 @@ Joueur_class.s: Joueur_class.cpp.s
 Joueur_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Joueur_class.cpp.s
 .PHONY : Joueur_class.cpp.s
+
+LigueSportive_class.o: LigueSportive_class.cpp.o
+
+.PHONY : LigueSportive_class.o
+
+# target to build an object file
+LigueSportive_class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.o
+.PHONY : LigueSportive_class.cpp.o
+
+LigueSportive_class.i: LigueSportive_class.cpp.i
+
+.PHONY : LigueSportive_class.i
+
+# target to preprocess a source file
+LigueSportive_class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.i
+.PHONY : LigueSportive_class.cpp.i
+
+LigueSportive_class.s: LigueSportive_class.cpp.s
+
+.PHONY : LigueSportive_class.s
+
+# target to generate assembly for a file
+LigueSportive_class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.s
+.PHONY : LigueSportive_class.cpp.s
+
+Stade_class.o: Stade_class.cpp.o
+
+.PHONY : Stade_class.o
+
+# target to build an object file
+Stade_class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.o
+.PHONY : Stade_class.cpp.o
+
+Stade_class.i: Stade_class.cpp.i
+
+.PHONY : Stade_class.i
+
+# target to preprocess a source file
+Stade_class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.i
+.PHONY : Stade_class.cpp.i
+
+Stade_class.s: Stade_class.cpp.s
+
+.PHONY : Stade_class.s
+
+# target to generate assembly for a file
+Stade_class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.s
+.PHONY : Stade_class.cpp.s
 
 main.o: main.cpp.o
 
@@ -236,9 +317,18 @@ help:
 	@echo "... Club_class.o"
 	@echo "... Club_class.i"
 	@echo "... Club_class.s"
+	@echo "... Entraineur_class.o"
+	@echo "... Entraineur_class.i"
+	@echo "... Entraineur_class.s"
 	@echo "... Joueur_class.o"
 	@echo "... Joueur_class.i"
 	@echo "... Joueur_class.s"
+	@echo "... LigueSportive_class.o"
+	@echo "... LigueSportive_class.i"
+	@echo "... LigueSportive_class.s"
+	@echo "... Stade_class.o"
+	@echo "... Stade_class.i"
+	@echo "... Stade_class.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
