@@ -1,6 +1,6 @@
 #include <iostream>
-#include "MenuPrincipal_class.h"
+#include "LogigueMenu_class.h"
 int main() {
-    MenuPrincipal_class menuprincipal;
-    menuprincipal.afficherInitialisation();
+LogigueMenu_class* menu = new LogigueMenu_class;
+menu->lancementDeLApplication_void();
 }

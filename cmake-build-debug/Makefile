@@ -143,6 +143,33 @@ tp1_Poo_2021/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/build
 .PHONY : tp1_Poo_2021/fast
 
+AffichageDesMenu_class.o: AffichageDesMenu_class.cpp.o
+
+.PHONY : AffichageDesMenu_class.o
+
+# target to build an object file
+AffichageDesMenu_class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/AffichageDesMenu_class.cpp.o
+.PHONY : AffichageDesMenu_class.cpp.o
+
+AffichageDesMenu_class.i: AffichageDesMenu_class.cpp.i
+
+.PHONY : AffichageDesMenu_class.i
+
+# target to preprocess a source file
+AffichageDesMenu_class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/AffichageDesMenu_class.cpp.i
+.PHONY : AffichageDesMenu_class.cpp.i
+
+AffichageDesMenu_class.s: AffichageDesMenu_class.cpp.s
+
+.PHONY : AffichageDesMenu_class.s
+
+# target to generate assembly for a file
+AffichageDesMenu_class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/AffichageDesMenu_class.cpp.s
+.PHONY : AffichageDesMenu_class.cpp.s
+
 Club_class.o: Club_class.cpp.o
 
 .PHONY : Club_class.o
@@ -251,32 +278,32 @@ LigueSportive_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.s
 .PHONY : LigueSportive_class.cpp.s
 
-MenuPrincipal_class.o: MenuPrincipal_class.cpp.o
+LogigueMenu_class.o: LogigueMenu_class.cpp.o
 
-.PHONY : MenuPrincipal_class.o
+.PHONY : LogigueMenu_class.o
 
 # target to build an object file
-MenuPrincipal_class.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/MenuPrincipal_class.cpp.o
-.PHONY : MenuPrincipal_class.cpp.o
+LogigueMenu_class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/LogigueMenu_class.cpp.o
+.PHONY : LogigueMenu_class.cpp.o
 
-MenuPrincipal_class.i: MenuPrincipal_class.cpp.i
+LogigueMenu_class.i: LogigueMenu_class.cpp.i
 
-.PHONY : MenuPrincipal_class.i
+.PHONY : LogigueMenu_class.i
 
 # target to preprocess a source file
-MenuPrincipal_class.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/MenuPrincipal_class.cpp.i
-.PHONY : MenuPrincipal_class.cpp.i
+LogigueMenu_class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/LogigueMenu_class.cpp.i
+.PHONY : LogigueMenu_class.cpp.i
 
-MenuPrincipal_class.s: MenuPrincipal_class.cpp.s
+LogigueMenu_class.s: LogigueMenu_class.cpp.s
 
-.PHONY : MenuPrincipal_class.s
+.PHONY : LogigueMenu_class.s
 
 # target to generate assembly for a file
-MenuPrincipal_class.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/MenuPrincipal_class.cpp.s
-.PHONY : MenuPrincipal_class.cpp.s
+LogigueMenu_class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/LogigueMenu_class.cpp.s
+.PHONY : LogigueMenu_class.cpp.s
 
 Stade_class.o: Stade_class.cpp.o
 
@@ -341,6 +368,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tp1_Poo_2021"
+	@echo "... AffichageDesMenu_class.o"
+	@echo "... AffichageDesMenu_class.i"
+	@echo "... AffichageDesMenu_class.s"
 	@echo "... Club_class.o"
 	@echo "... Club_class.i"
 	@echo "... Club_class.s"
@@ -353,9 +383,9 @@ help:
 	@echo "... LigueSportive_class.o"
 	@echo "... LigueSportive_class.i"
 	@echo "... LigueSportive_class.s"
-	@echo "... MenuPrincipal_class.o"
-	@echo "... MenuPrincipal_class.i"
-	@echo "... MenuPrincipal_class.s"
+	@echo "... LogigueMenu_class.o"
+	@echo "... LogigueMenu_class.i"
+	@echo "... LogigueMenu_class.s"
 	@echo "... Stade_class.o"
 	@echo "... Stade_class.i"
 	@echo "... Stade_class.s"

@@ -6,17 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/Users/simonduchesne/Desktop/tp1 Poo 2021/MenuPrincipal_class.cpp
-MenuPrincipal_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/MenuPrincipal_class.h
+/Users/simonduchesne/Desktop/tp1 Poo 2021/AffichageDesMenu_class.cpp
+AffichageDesMenu_class.h
+/Users/simonduchesne/Desktop/tp1 Poo 2021/AffichageDesMenu_class.h
+
+/Users/simonduchesne/Desktop/tp1 Poo 2021/AffichageDesMenu_class.h
 iostream
 -
 
-/Users/simonduchesne/Desktop/tp1 Poo 2021/MenuPrincipal_class.h
+/Users/simonduchesne/Desktop/tp1 Poo 2021/LogigueMenu_class.cpp
+LogigueMenu_class.h
+/Users/simonduchesne/Desktop/tp1 Poo 2021/LogigueMenu_class.h
+
+/Users/simonduchesne/Desktop/tp1 Poo 2021/LogigueMenu_class.h
+AffichageDesMenu_class.h
+/Users/simonduchesne/Desktop/tp1 Poo 2021/AffichageDesMenu_class.h
 
 /Users/simonduchesne/Desktop/tp1 Poo 2021/main.cpp
 iostream
 -
-MenuPrincipal_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/MenuPrincipal_class.h
+LogigueMenu_class.h
+/Users/simonduchesne/Desktop/tp1 Poo 2021/LogigueMenu_class.h
 
