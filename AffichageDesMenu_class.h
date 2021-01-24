@@ -13,7 +13,7 @@ protected:
 public:
     void afficherMenuPrincipale();
     void afficherLancementdeLApp_void();
-
+    void afficherErreurDeSelection_void();
 };
 
 

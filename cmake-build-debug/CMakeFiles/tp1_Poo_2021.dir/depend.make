@@ -17,6 +17,7 @@ CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.o: ../LigueSportive_class.cp
 CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.o: ../LigueSportive_class.h
 
 CMakeFiles/tp1_Poo_2021.dir/LogigueMenu_class.cpp.o: ../AffichageDesMenu_class.h
+CMakeFiles/tp1_Poo_2021.dir/LogigueMenu_class.cpp.o: ../LigueSportive_class.h
 CMakeFiles/tp1_Poo_2021.dir/LogigueMenu_class.cpp.o: ../LogigueMenu_class.cpp
 CMakeFiles/tp1_Poo_2021.dir/LogigueMenu_class.cpp.o: ../LogigueMenu_class.h
 
@@ -24,6 +25,7 @@ CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.o: ../Stade_class.cpp
 CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.o: ../Stade_class.h
 
 CMakeFiles/tp1_Poo_2021.dir/main.cpp.o: ../AffichageDesMenu_class.h
+CMakeFiles/tp1_Poo_2021.dir/main.cpp.o: ../LigueSportive_class.h
 CMakeFiles/tp1_Poo_2021.dir/main.cpp.o: ../LogigueMenu_class.h
 CMakeFiles/tp1_Poo_2021.dir/main.cpp.o: ../main.cpp
 

@@ -13,8 +13,14 @@ void AffichageDesMenu_class::afficherMenuPrincipale() {
     std::cout << "5) en construction" << std::endl;
     std::cout << "6) en construction" << std::endl;
     std::cout << "7) en construction" << std::endl;
+    std::cout << "Veuillez entrer votre choix:";
 }
 
 void AffichageDesMenu_class::afficherLancementdeLApp_void() {
     std::cout << "TP1 - Partie Miniprojet - Simon Duchesne - DUCS20069507 - 22 Janvier" << std::endl;
+}
+
+void AffichageDesMenu_class::afficherErreurDeSelection_void() {
+    std::cout << "Le choix que vous avez fait n'est pas valide." << std::endl;
+    std::cout << "Veuillez refaire votre choix" << std::endl;
 }
