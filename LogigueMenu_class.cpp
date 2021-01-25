@@ -23,7 +23,10 @@ int LogigueMenu_class::choixDuMenu() {
 
 int LogigueMenu_class::verificationDuChoix_int() {
     switch (choixDuMenuPrincipale_int) {
-
+        case 1:
+            enregistrerUnNouveauJoueur();
+            break;
+        case 9:break;
         default: choixNonReconnue_void();
     }
     return 0;
@@ -32,5 +35,34 @@ int LogigueMenu_class::verificationDuChoix_int() {
 void LogigueMenu_class::choixNonReconnue_void() {
     affichageDesMenuClass->afficherErreurDeSelection_void();
     choixDuMenu();
+}
+
+void LogigueMenu_class::enregistrerUnNouveauJoueur() {
+    int etape=1;
+    std::string nomDuJoueur, prenomDuJoueur, villeDeNaissanceDuJoueur;
+    float poidsDuJoueur, tailleDuJoueur;
+
+    affichageDesMenuClass->affichageEnregistrerJoueur_void(etape);
+    std::cin >> prenomDuJoueur ;
+    etape++;
+    affichageDesMenuClass->affichageEnregistrerJoueur_void(etape);
+    std::cin >> nomDuJoueur;
+    etape++;
+    affichageDesMenuClass->affichageEnregistrerJoueur_void(etape);
+    std::cin >> poidsDuJoueur ;
+    etape++;
+    affichageDesMenuClass->affichageEnregistrerJoueur_void(etape);
+    std::cin >> tailleDuJoueur;
+    etape++;
+    affichageDesMenuClass->affichageEnregistrerJoueur_void(etape);
+    std::cin >> villeDeNaissanceDuJoueur;
+
+    Joueur_class* ptrjoueurClass= new Joueur_class(prenomDuJoueur,nomDuJoueur,poidsDuJoueur,tailleDuJoueur,villeDeNaissanceDuJoueur);
+    ligueSportiveClass->ajouterUnJoueurAuRpertoire(ptrjoueurClass);
+    choixDuMenu();
+}
+
+void LogigueMenu_class::afficherTousLesJoueur() {
+    int
 }
 

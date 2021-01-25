@@ -3,8 +3,10 @@
 //
 
 #ifndef TP1_POO_2021_JOUEUR_CLASS_H
-#include <string>
 #define TP1_POO_2021_JOUEUR_CLASS_H
+#include <string>
+
+
 
 
 class Joueur_class {
@@ -14,6 +16,7 @@ private:
     //todo ParcoursDuJoueur est une liste de parcours. un parcours est caractérisé par le nom du club ou le joueur a joué
 protected:
 public:
+    Joueur_class(std::string prenom, std::string nom, float poids, float taille, std::string villeDeNaissance);
 };
 
 

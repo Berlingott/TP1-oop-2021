@@ -14,6 +14,7 @@ public:
     void afficherMenuPrincipale();
     void afficherLancementdeLApp_void();
     void afficherErreurDeSelection_void();
+    void affichageEnregistrerJoueur_void(int etape);
 };
 
 

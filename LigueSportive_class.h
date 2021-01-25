@@ -14,11 +14,17 @@
 class LigueSportive_class {
 private:
     std::vector<Joueur_class*> repertoireJoeur_vector;
-    std::vector<Joueur_class*> repertoireClub_vector;
+    std::vector<Club_class*> repertoireClub_vector;
     std::vector<Entraineur_class*> repertoireEntraineur_vector;
     std::vector<Stade_class*> repertoireStade_vector;
 protected:
 public:
+    void ajouterUnJoueurAuRpertoire(Joueur_class* ptrjoueurclass);//todo
+    int getGrandeurDuRepertoireDesJoueurs();
+    void getInformationDuJoueur(int positionJoueurChercher);
+    void ajouterUnClubAuRpertoire(Club_class* ptrclubclass);//todo
+    void ajouterUnEntraineurAuRpertoire(Entraineur_class* ptrentraineurclass);//todo
+    void ajouterUnStadeAuRpertoire(Stade_class* ptrstadeclass);//todo
 };
 
 
