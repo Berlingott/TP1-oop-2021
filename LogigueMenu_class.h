@@ -16,8 +16,7 @@ private:
     AffichageDesMenu_class* affichageDesMenuClass;
     LigueSportive_class* ligueSportiveClass;
     int choixDuMenuPrincipale_int;
-
-
+    bool quitter = false;
 private:
 public:
     LogigueMenu_class();

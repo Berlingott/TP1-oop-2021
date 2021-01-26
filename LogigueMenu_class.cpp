@@ -15,9 +15,11 @@ void LogigueMenu_class::lancementDeLApplication_void() {
 }
 
 int LogigueMenu_class::choixDuMenu() {
-    affichageDesMenuClass->afficherMenuPrincipale();
-    std::cin >> choixDuMenuPrincipale_int;
-    verificationDuChoix_int();
+    while (!quitter) {
+        affichageDesMenuClass->afficherMenuPrincipale();
+        std::cin >> choixDuMenuPrincipale_int;
+        verificationDuChoix_int();
+    }
     return 0;
 }
 
@@ -26,7 +28,12 @@ int LogigueMenu_class::verificationDuChoix_int() {
         case 1:
             enregistrerUnNouveauJoueur();
             break;
-        case 9:break;
+        case 2:
+            afficherTousLesJoueur();
+            break;
+        case 9:
+            quitter = true;
+            break;
         default: choixNonReconnue_void();
     }
     return 0;
@@ -59,10 +66,12 @@ void LogigueMenu_class::enregistrerUnNouveauJoueur() {
 
     Joueur_class* ptrjoueurClass= new Joueur_class(prenomDuJoueur,nomDuJoueur,poidsDuJoueur,tailleDuJoueur,villeDeNaissanceDuJoueur);
     ligueSportiveClass->ajouterUnJoueurAuRpertoire(ptrjoueurClass);
-    choixDuMenu();
 }
 
 void LogigueMenu_class::afficherTousLesJoueur() {
-    int
+    Joueur_class* ptrpresentjoueurclass;
+    for (int i = ligueSportiveClass->getGrandeurDuRepertoireDesJoueurs()-1; i>=0 ; i--) {
+        ptrpresentjoueurclass = ligueSportiveClass->getPtrJoueurDuRegistre(i);
+        affichageDesMenuClass->afficherUnJoueur(ptrpresentjoueurclass->getprenomDuJoueur(), ptrpresentjoueurclass->getnomDuJoueur(), ptrpresentjoueurclass->getpoidsDuJoeur(), ptrpresentjoueurclass->gettailleDuJoueur(), ptrpresentjoueurclass->getvilleDeNaissanceDuJoueur());
+    }
 }
-

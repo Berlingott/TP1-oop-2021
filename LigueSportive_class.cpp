@@ -11,3 +11,20 @@ repertoireJoeur_vector.push_back(ptrjoueurclass);
 int LigueSportive_class::getGrandeurDuRepertoireDesJoueurs() {
     return repertoireJoeur_vector.size();
 }
+
+int LigueSportive_class::getGrandeurDuRepertoireDesClubs() {
+    return repertoireClub_vector.size();
+}
+
+int LigueSportive_class::getGrandeurDuRepertoireDesStade() {
+    return repertoireStade_vector.size();
+}
+
+int LigueSportive_class::getGrandeurDuRepertoireDesEntraineur() {
+    return repertoireEntraineur_vector.size();
+}
+
+Joueur_class *LigueSportive_class::getPtrJoueurDuRegistre(int positionDansVecteur) {
+    return repertoireJoeur_vector[positionDansVecteur];
+}
+

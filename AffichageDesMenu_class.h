@@ -15,6 +15,7 @@ public:
     void afficherLancementdeLApp_void();
     void afficherErreurDeSelection_void();
     void affichageEnregistrerJoueur_void(int etape);
+    void afficherUnJoueur(std::string prenom, std::string nom, float poids, float taille, std::string villedenaissance);
 };
 
 

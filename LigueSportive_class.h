@@ -21,6 +21,12 @@ protected:
 public:
     void ajouterUnJoueurAuRpertoire(Joueur_class* ptrjoueurclass);//todo
     int getGrandeurDuRepertoireDesJoueurs();
+    int getGrandeurDuRepertoireDesClubs();
+    int getGrandeurDuRepertoireDesStade();
+    int getGrandeurDuRepertoireDesEntraineur();
+
+    Joueur_class* getPtrJoueurDuRegistre(int positionDansVecteur);
+
     void getInformationDuJoueur(int positionJoueurChercher);
     void ajouterUnClubAuRpertoire(Club_class* ptrclubclass);//todo
     void ajouterUnEntraineurAuRpertoire(Entraineur_class* ptrentraineurclass);//todo

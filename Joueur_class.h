@@ -17,6 +17,11 @@ private:
 protected:
 public:
     Joueur_class(std::string prenom, std::string nom, float poids, float taille, std::string villeDeNaissance);
+    std::string getnomDuJoueur();
+    std::string getprenomDuJoueur();
+    std::string getvilleDeNaissanceDuJoueur();
+    float getpoidsDuJoeur();
+    float gettailleDuJoueur();
 };
 
 

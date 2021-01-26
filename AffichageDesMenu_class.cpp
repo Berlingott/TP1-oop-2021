@@ -7,7 +7,7 @@
 void AffichageDesMenu_class::afficherMenuPrincipale() {
     std::cout << "Veuillez entrer le numero associer à l'option de votre choix" << std::endl;
     std::cout << "1) Enregistrer un nouveau joueur" << std::endl;
-    std::cout << "2) en construction" << std::endl;
+    std::cout << "2) Afficher tous les joueurs enregistrés" << std::endl;
     std::cout << "3) en construction" << std::endl;
     std::cout << "4) en construction" << std::endl;
     std::cout << "5) en construction" << std::endl;
@@ -41,5 +41,14 @@ void AffichageDesMenu_class::affichageEnregistrerJoueur_void(int etape) {
     if (etape==5){
         std::cout << "Veuillez entrer la ville de naissance du joueur:";
     }
+}
+
+void AffichageDesMenu_class::afficherUnJoueur(std::string prenom, std::string nom, float poids, float taille,
+                                              std::string villedenaissance) {
+    std::cout << std::endl;
+    std::cout << prenom << " " << nom << std::endl;
+    std::cout << "Taille:" << taille << std::endl;
+    std::cout << "Poids:" << poids << std::endl;
+    std::cout << "Ville de naissance: " << villedenaissance << std::endl;
 }
 

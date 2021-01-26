@@ -14,3 +14,23 @@ Joueur_class::Joueur_class(std::string prenom, std::string nom, float poids, flo
     this->tailleDuJoueur_float = taille;
     this->villeDeNaissanceDuJoueur_string = std::move(villeDeNaissance);
 }
+
+std::string Joueur_class::getnomDuJoueur() {
+    return nomDuJoueur_string;
+}
+
+std::string Joueur_class::getprenomDuJoueur() {
+    return prenomDuJoueur_sring;
+}
+
+std::string Joueur_class::getvilleDeNaissanceDuJoueur() {
+    return villeDeNaissanceDuJoueur_string;
+}
+
+float Joueur_class::getpoidsDuJoeur() {
+    return poidsDuJoueur_float;
+}
+
+float Joueur_class::gettailleDuJoueur() {
+    return tailleDuJoueur_float;
+}
