@@ -12,7 +12,7 @@ class Club_class {
 private:
     std::string histoireDuClub_string, couleurDuClub_string, villeDuClub_string, adresseDuClub_string;
     //todo type date dateDeCreation_date
-    //todo Effectif (liste de type joueur)
+    //todo Effectif (liste de type joueur) vecteur
     //todo palmares (titre donné a un certains moment)
     //todo stadeDuClub_class pointeur sur la stade de l'équipe
     //todo staffTechnique_list liste de Personne

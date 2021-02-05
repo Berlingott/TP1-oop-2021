@@ -8,6 +8,7 @@
 #include "LigueSportive_class.h"
 #include "Joueur_class.h"
 #include <iostream>
+#include "InformationMembreEffectifDuClub_class.h"
 
 
 
@@ -28,6 +29,7 @@ public:
     void afficherTousLesJoueur();
     void enregistrerUnNouveauClub();
     void enregisrerUnNouveauStade();
+    void ajouterJoueurAuClub();
 };
 
 

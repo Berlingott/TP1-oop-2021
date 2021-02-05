@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/tp1_Poo_2021.dir/AffichageDesMenu_class.cpp.o"
   "CMakeFiles/tp1_Poo_2021.dir/Club_class.cpp.o"
   "CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.o"
+  "CMakeFiles/tp1_Poo_2021.dir/InformationMembreEffectifDuClub_class.cpp.o"
   "CMakeFiles/tp1_Poo_2021.dir/Joueur_class.cpp.o"
   "CMakeFiles/tp1_Poo_2021.dir/LigueSportive_class.cpp.o"
   "CMakeFiles/tp1_Poo_2021.dir/LogigueMenu_class.cpp.o"

@@ -8,11 +8,11 @@ void AffichageDesMenu_class::afficherMenuPrincipale() {
     std::cout << "Veuillez entrer le numero associer à l'option de votre choix" << std::endl;
     std::cout << "1) Enregistrer un nouveau joueur" << std::endl;
     std::cout << "2) Afficher tous les joueurs enregistrés" << std::endl;
-    std::cout << "3) en construction" << std::endl;
-    std::cout << "4) en construction" << std::endl;
+    std::cout << "3) Enregistrer un nouveau club" << std::endl;
+    std::cout << "4) Afficher Tous les club " << std::endl;
     std::cout << "5) en construction" << std::endl;
     std::cout << "6) en construction" << std::endl;
-    std::cout << "7) en construction" << std::endl;//todo quitter
+    std::cout << "9) Quitter" << std::endl;
     std::cout << "Veuillez entrer votre choix:";
 }
 
@@ -51,4 +51,36 @@ void AffichageDesMenu_class::afficherUnJoueur(std::string prenom, std::string no
     std::cout << "Poids:" << poids << std::endl;
     std::cout << "Ville de naissance: " << villedenaissance << std::endl;
 }
+
+void AffichageDesMenu_class::affichageCreationDeClub(int etape) {
+    if (etape==1){
+        std::cout << "Création d'un club en cours"<< std::endl;
+    }
+    if (etape==2){
+        std::cout << "Veuillez entrer le nom du club:";
+    }
+    if (etape==3){
+        std::cout << "Veuillez entrer la couleur du club";
+    }
+    if (etape==4){
+        std::cout << "Veuillez faire un résumé de l'histoire du club:";
+    }
+    if (etape==5){
+        std::cout << "Voici la liste des joueurs enregistrer:" << std::endl;
+    }
+    if (etape==5){
+        std::cout << "Voulez-vous créer un nouveau joueur maintenant(celui-ci sera automatiquement join au club)?:" << std::endl;
+    }
+    if (etape==5){
+        std::cout << "Voulez-vous créer un nouveau joueur maintenant(celui-ci sera automatiquement join au club)?(y/n):" << std::endl;
+    }
+    if (etape==6){
+        std::cout << "Voulez-vous créer un autre nouveau joueur?(y/n)";
+    }
+    if (etape==7){
+        std::cout << "Voulez-vous entrer un joueur déjà existant? (y/n)";
+    }
+
+}
+
 

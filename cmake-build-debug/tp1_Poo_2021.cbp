@@ -98,6 +98,12 @@
 		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.h">
 			<Option target="tp1_Poo_2021"/>
 		</Unit>
+		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/InformationMembreEffectifDuClub_class.cpp">
+			<Option target="tp1_Poo_2021"/>
+		</Unit>
+		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/InformationMembreEffectifDuClub_class.h">
+			<Option target="tp1_Poo_2021"/>
+		</Unit>
 		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.cpp">
 			<Option target="tp1_Poo_2021"/>
 		</Unit>
