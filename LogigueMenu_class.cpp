@@ -133,6 +133,11 @@ void LogigueMenu_class::enregistrerUnNouveauClub() {
     while (reponse='y'){
         int selectiondujoueur;
         afficherTousLesJoueur();
+        etape++;
+        affichageDesMenuClass->affichageCreationDeClub(etape);
+        etape--;
+        std::cin >> selectiondujoueur;
+
 
 
 

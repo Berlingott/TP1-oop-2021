@@ -19,7 +19,7 @@ public:
     void set_ptr_suivant_informationMembreEffectifDuClubClass(InformationMembreEffectifDuClub_class* ptrInformationMembreEffectif);
     void set_ptr_precedent_informationMembreEffectifDuClubClass(InformationMembreEffectifDuClub_class* ptrInformationMembreEffectif);
     InformationMembreEffectifDuClub_class(Joueur_class* ptrJoueurMembre);
-    InformationMembreEffectifDuClub_class(Joueur_class* ptrJoueurMembre, InformationMembreEffectifDuClub_class* ptr_precedent_informationMembreEffectifDuClubClass)
+    InformationMembreEffectifDuClub_class(Joueur_class* ptrJoueurMembre, InformationMembreEffectifDuClub_class* ptr_precedent_informationMembreEffectifDuClubClass);
 
 };
 
