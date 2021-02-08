@@ -3,3 +3,24 @@
 //
 
 #include "Entraineur_class.h"
+
+#include <utility>
+
+std::string Entraineur_class::getNomEntraineur() {
+    return nomEntraineur;
+}
+
+std::string Entraineur_class::getPrenomEntraineur() {
+    return prenomEntraineur;
+}
+
+std::string Entraineur_class::getLieuObtentionDuGrade() {
+    return lieuObtentionDuGrade;
+}
+
+Entraineur_class::Entraineur_class(std::string prenomentraineur, std::string nomentraineur, std::string lieudugrade) {
+    this->prenomEntraineur = std::move(prenomentraineur);
+    this->nomEntraineur = std::move(nomentraineur);
+    this->lieuObtentionDuGrade = std::move(lieudugrade);
+}
+

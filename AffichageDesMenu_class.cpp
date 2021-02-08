@@ -80,7 +80,12 @@ void AffichageDesMenu_class::affichageCreationDeClub(int etape) {
     if (etape==7){
         std::cout << "Voulez-vous entrer un joueur déjà existant? (y/n)";
     }
-
+    if (etape==8){
+        std::cout << "Veuillez entrer le numméro du joueur à ajouter:";
+    }
+    if (etape==9){
+        std::cout << "Le club a été créé.";
+    }
 }
 
 

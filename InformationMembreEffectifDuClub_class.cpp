@@ -5,17 +5,17 @@
 #include "InformationMembreEffectifDuClub_class.h"
 
 Joueur_class *InformationMembreEffectifDuClub_class::get_ptrJoueurMembre() {
-    return nullptr;
+    return ptrjoueurMembre;
 }
 
 InformationMembreEffectifDuClub_class *
 InformationMembreEffectifDuClub_class::get_ptr_suivant_informationMembreEffectifDuClubClass() {
-    return nullptr;
+    return ptr_suivant_informationMembreEffectifDuClubClass;
 }
 
 InformationMembreEffectifDuClub_class *
 InformationMembreEffectifDuClub_class::get_ptr_precedent_informationMembreEffectifDuClubClass() {
-    return nullptr;
+    return ptr_precedent_informationMembreEffectifDuClubClass;
 }
 
 void InformationMembreEffectifDuClub_class::set_ptrJoueurMembre(Joueur_class *ptrjoueurclass) {
@@ -29,7 +29,7 @@ ptr_suivant_informationMembreEffectifDuClubClass=ptrInformationMembreEffectif;
 
 void InformationMembreEffectifDuClub_class::set_ptr_precedent_informationMembreEffectifDuClubClass(
         InformationMembreEffectifDuClub_class *ptrInformationMembreEffectif) {
-ptr_precedent_informationMembreEffectifDuClubClass = ptrInformationMembreEffectif;
+this->ptr_precedent_informationMembreEffectifDuClubClass = ptrInformationMembreEffectif;
 }
 
 InformationMembreEffectifDuClub_class::InformationMembreEffectifDuClub_class(Joueur_class *ptrJoueurMembre) {
@@ -42,5 +42,6 @@ InformationMembreEffectifDuClub_class::InformationMembreEffectifDuClub_class(Jou
                                                                              InformationMembreEffectifDuClub_class *ptr_precedent_informationMembreEffectifDuClubClass) {
 this->ptr_precedent_informationMembreEffectifDuClubClass = ptr_precedent_informationMembreEffectifDuClubClass;
 this->ptrjoueurMembre = ptrJoueurMembre;
+this->ptr_suivant_informationMembreEffectifDuClubClass = nullptr;
 
 }

@@ -9,10 +9,15 @@
 
 class Entraineur_class {
 private:
-    std::string nomEntraineur_string, prenomEntraineur_string, lieuObtentionDuGrade_string;
+    std::string nomEntraineur, prenomEntraineur, lieuObtentionDuGrade;
     //todo liste de titre gagnées type titre gagnés
 protected:
 public:
+    std::string getNomEntraineur();
+    std::string getPrenomEntraineur();
+    std::string getLieuObtentionDuGrade();
+
+    Entraineur_class(std::string prenomentraineur, std::string nomentraineur, std::string lieudugrade);
 };
 
 

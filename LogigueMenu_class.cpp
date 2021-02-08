@@ -129,7 +129,6 @@ void LogigueMenu_class::enregistrerUnNouveauClub() {
     reponse='y';
     affichageDesMenuClass->affichageCreationDeClub(etape);
     std::cin >> reponse;
-    etape++;
     while (reponse='y'){
         int selectiondujoueur;
         afficherTousLesJoueur();
@@ -138,16 +137,28 @@ void LogigueMenu_class::enregistrerUnNouveauClub() {
         etape--;
         std::cin >> selectiondujoueur;
 
+        if (ptrteteInformationmembreeffectif == nullptr){
+            ptrteteInformationmembreeffectif = new InformationMembreEffectifDuClub_class(ligueSportiveClass->getPtrJoueurDuRegistre(selectiondujoueur));
+        } else{
+            ptrmanipulee_Informationmembreeffectif = ptrteteInformationmembreeffectif->get_ptr_suivant_informationMembreEffectifDuClubClass();
+            ptrprecedent_Informationmembreeffectif = nullptr;
+            ptrsuivant_Informationmembreeffectif = ptrmanipulee_Informationmembreeffectif->get_ptr_suivant_informationMembreEffectifDuClubClass();
 
-
-
-
+            while (ptrsuivant_Informationmembreeffectif != nullptr){
+                ptrprecedent_Informationmembreeffectif=ptrmanipulee_Informationmembreeffectif;
+                ptrmanipulee_Informationmembreeffectif=ptrsuivant_Informationmembreeffectif;
+                ptrsuivant_Informationmembreeffectif=ptrsuivant_Informationmembreeffectif->get_ptr_suivant_informationMembreEffectifDuClubClass();
+            }
+            ptrsuivant_Informationmembreeffectif = new InformationMembreEffectifDuClub_class(ligueSportiveClass->getPtrJoueurDuRegistre(selectiondujoueur));
+            ptrmanipulee_Informationmembreeffectif->set_ptr_suivant_informationMembreEffectifDuClubClass(ptrsuivant_Informationmembreeffectif);
+            ptrprecedent_Informationmembreeffectif->set_ptr_suivant_informationMembreEffectifDuClubClass(ptrmanipulee_Informationmembreeffectif);
+        }
 
         affichageDesMenuClass->affichageCreationDeClub(etape);
         std::cin >> reponse;
     }
     etape++;
-
+    affichageDesMenuClass->affichageCreationDeClub(etape);
 }
 
 void LogigueMenu_class::ajouterJoueurAuClub() {
