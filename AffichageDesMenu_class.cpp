@@ -6,17 +6,21 @@
 
 void AffichageDesMenu_class::afficherMenuPrincipale() {
     std::cout << "Veuillez entrer le numero associer à l'option de votre choix" << std::endl;
+    std::cout << "===== Enregistrement =====" << std::endl;
     std::cout << "1) Enregistrer un nouveau joueur" << std::endl;
-    std::cout << "2) Afficher tous les joueurs enregistrés" << std::endl;
-    std::cout << "3) Enregistrer un nouveau club" << std::endl;
-    std::cout << "4) Afficher Tous les club " << std::endl;
-    std::cout << "5) Enregistrer un entraineur " << std::endl;
+    std::cout << "2) Enregistrer un entraineur " << std::endl;
+    std::cout << "3) Enregistrer un nouveau stade" << std::endl;
+    std::cout << "4) Enregistrer un nouveau club" << std::endl;
+    std::cout << "===== Affichage =====" << std::endl;
+    std::cout << "5) Afficher tous les joueurs enregistrés" << std::endl;
     std::cout << "6) Afficher tous les entraineurs" << std::endl;
-    std::cout << "7) Enregistrer un nouveau stade" << std::endl;
+    std::cout << "7) Afficher tous les clubs " << std::endl;
     std::cout << "8) Afficher les joueur d'un club" << std::endl;
-    std::cout << "0) Afficher le club et l'entraineur les plus titrés" << std::endl;
-
-    std::cout << "9) Quitter" << std::endl;
+    std::cout << "9) Afficher le club et l'entraineur les plus titrés" << std::endl;
+    std::cout << "===== Supression =====" << std::endl;
+    std::cout << "10) Supprimer un club du registre" << std::endl;
+    std::cout << "===== Quitter =====" << std::endl;
+    std::cout << "0) Quitter" << std::endl;
     std::cout << "Veuillez entrer votre choix (ex:3) :";
 }
 
@@ -184,8 +188,8 @@ void AffichageDesMenu_class::affichageJoueurClub(int etape) {
 }
 
 void AffichageDesMenu_class::affichernomdunclub(std::string nom, std::string couleur) {
-    std::cout << "Nom du club: " << nom;
-    std::cout << "Couleur du club: " << couleur;
+    std::cout << "Nom du club: " << nom << std::endl;
+    std::cout << "Couleur du club: " << couleur << std::endl;
 }
 
 void AffichageDesMenu_class::afficherLesPlusTitree(std::string nomClub, std::string couleurClub, int nombreTitreClub,
@@ -204,6 +208,28 @@ void AffichageDesMenu_class::afficherLesPlusTitree(std::string nomClub, std::str
     std::cout << "Nombre de Titre: " << nombbreTitreEntraineur << std::endl;
     std::cout << "==============================" << std::endl;
     std::cout << std::endl;
+}
 
+void AffichageDesMenu_class::affichageSupressionDunClub(int etape) {
+
+    if (etape == 1) {
+        std::cout << "===== Supression d'un club =====" << std::endl;
+        std::cout << "Voici tous les clubs enregistrés:" << std::endl;
+    }
+    if (etape == 2 ){
+        std::cout << "Veuillez entrer le numéro associer au club que vous voullez supprimer:";
+    }
+    if (etape == 3){
+        std::cout << "Voici le club sélectionné:" << std::endl;
+    }
+    if(etape == 4) {
+        std::cout << "Êtes-vous certains de vouloir supprimer ce club?(y/n):";
+    }
+    if (etape == 0){
+        std::cout << "Supression annulée." << std::endl;
+    }
+    if (etape == 5){
+        std::cout << " Le club a été supprimer." << std::endl;
+    }
 }
 

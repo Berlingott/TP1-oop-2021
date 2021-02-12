@@ -27,6 +27,7 @@ public:
     void affichageJoueurClub(int etape);
     void affichernomdunclub(std::string nom, std::string couleur);
     void afficherLesPlusTitree(std::string nomClub, std::string couleurClub, int nombreTitreClub, std::string prenomEntraineur, std::string nomEntraineur, int nombbreTitreEntraineur);
+    void affichageSupressionDunClub(int etape);
 };
 
 

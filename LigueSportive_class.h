@@ -34,6 +34,7 @@ public:
     void ajouterUnClubAuRpertoire(Club_class* ptrclubclass);//todo
     void ajouterUnEntraineurAuRpertoire(Entraineur_class* ptrentraineurclass);//todo
     void ajouterUnStadeAuRpertoire(Stade_class* ptrstadeclass);//todo
+    void supprimerUnClubDuRegistre(int positionDansregistre);
 };
 
 

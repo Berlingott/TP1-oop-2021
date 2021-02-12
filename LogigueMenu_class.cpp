@@ -29,22 +29,33 @@ int LogigueMenu_class::verificationDuChoix_int() {
             enregistrerUnNouveauJoueur();
             break;
         case 2:
-            afficherTousLesJoueur();
+            ajouterUnNouvelEntraineur();
             break;
         case 3:
+            ajouterUnNouveauStade();
+            break;
+        case 4:
             enregistrerUnNouveauClub();
             break;
         case 5:
-            ajouterUnNouvelEntraineur();
+            afficherTousLesJoueur();
+            break;
+        case 6:
+            afficherTousLesEntraineur();
             break;
         case 7:
-            ajouterUnNouveauStade();
+            afficherSeulementNomtousLesClub();
             break;
-        case 0:
+        case 8:
+            afficherLesJoueursDunClub();
+            break;
+        case 9:
             afficherLesPlusTitree();
             break;
-
-        case 9:
+        case 10:
+            supprimerUnClub();
+            break;
+        case 0:
             quitter = true;
             break;
         default: choixNonReconnue_void();
@@ -282,7 +293,7 @@ void LogigueMenu_class::afficherLesJoueursDunClub() {
     affichageDesMenuClass->affichageJoueurClub(etape);
     etape++;
     std::cin >> choixdelutilisateur;
-
+    choixdelutilisateur--;
     affichageDesMenuClass->affichageJoueurClub(etape);
 
     ptrclubselectionnee = ligueSportiveClass->getPtrClubDuRegistre(choixdelutilisateur);
@@ -302,8 +313,8 @@ void LogigueMenu_class::afficherSeulementNomtousLesClub() {
 }
 
 void LogigueMenu_class::afficherLesPlusTitree() {
-    Club_class* ptrClubLePlusTitree = ligueSportiveClass->getPtrClubDuRegistre(ligueSportiveClass->getGrandeurDuRepertoireDesClubs());
-    Entraineur_class* ptrEntraineurLePlusTitree = ligueSportiveClass->getPtrEntraineurDuRegistre(ligueSportiveClass->getGrandeurDuRepertoireDesEntraineur());
+    Club_class* ptrClubLePlusTitree = ligueSportiveClass->getPtrClubDuRegistre(ligueSportiveClass->getGrandeurDuRepertoireDesClubs()-1);
+    Entraineur_class* ptrEntraineurLePlusTitree = ligueSportiveClass->getPtrEntraineurDuRegistre(ligueSportiveClass->getGrandeurDuRepertoireDesEntraineur()-1);
 
     for (int i = 0; i < ligueSportiveClass->getGrandeurDuRepertoireDesClubs(); ++i) {
         if (ptrClubLePlusTitree->getnombredetitreduclub()<ligueSportiveClass->getPtrClubDuRegistre(i)->getnombredetitreduclub()){
@@ -316,5 +327,34 @@ void LogigueMenu_class::afficherLesPlusTitree() {
         }
     }
     affichageDesMenuClass->afficherLesPlusTitree(ptrClubLePlusTitree->getnomduclub(),ptrClubLePlusTitree->getcouleurduclub(),ptrClubLePlusTitree->getnombredetitreduclub(),ptrEntraineurLePlusTitree->getPrenomEntraineur(),ptrEntraineurLePlusTitree->getNomEntraineur(),ptrEntraineurLePlusTitree->getNombreDeTitreDeLentraineur());
+}
+
+void LogigueMenu_class::supprimerUnClub() {
+    Club_class* clubClass;
+    int etape = 1 ;
+    int choixdesupresseion;
+    char confirmationdesuppression = 'n';
+
+    affichageDesMenuClass->affichageSupressionDunClub(etape);
+    etape++;
+    afficherSeulementNomtousLesClub();
+    affichageDesMenuClass->affichageSupressionDunClub(etape);
+    etape++;
+    std::cin >>choixdesupresseion;
+    choixdesupresseion--;
+    clubClass = ligueSportiveClass->getPtrClubDuRegistre(choixdesupresseion);
+    affichageDesMenuClass->affichageSupressionDunClub(etape);
+    etape++;
+    affichageDesMenuClass->affichernomdunclub(clubClass->getnomduclub(), clubClass->getcouleurduclub());
+    affichageDesMenuClass->affichageSupressionDunClub(etape);
+    etape++;
+    std::cin >> confirmationdesuppression;
+    if(confirmationdesuppression == 'y'){
+        ligueSportiveClass->supprimerUnClubDuRegistre(choixdesupresseion);
+        delete clubClass;
+        affichageDesMenuClass->affichageSupressionDunClub(etape);
+    } else{
+        affichageDesMenuClass->affichageSupressionDunClub(0);
+    }
 }
 

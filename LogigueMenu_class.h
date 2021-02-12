@@ -38,6 +38,7 @@ public:
     void afficherLesJoueursDunClub();
     void afficherSeulementNomtousLesClub();
     void afficherLesPlusTitree();
+    void supprimerUnClub();
 
 };
 

@@ -10,12 +10,6 @@
 iostream
 -
 
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Club_class.cpp
-Club_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Club_class.h
-utility
--
-
 /Users/simonduchesne/Desktop/tp1 Poo 2021/Club_class.h
 chrono
 -
@@ -40,12 +34,6 @@ Stade_class.h
 string
 -
 
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.cpp
-Entraineur_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.h
-utility
--
-
 /Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.h
 string
 -
@@ -61,10 +49,6 @@ Joueur_class.h
 /Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.h
 string
 -
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.cpp
-LigueSportive_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.h
 
 /Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.h
 vector
@@ -107,10 +91,4 @@ string
 -
 Date_class.h
 /Users/simonduchesne/Desktop/tp1 Poo 2021/Date_class.h
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/main.cpp
-iostream
--
-LogigueMenu_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/LogigueMenu_class.h
 

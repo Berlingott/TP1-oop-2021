@@ -41,6 +41,7 @@ public:
     TitreGagnee* getptrduntitrespecifiquedelalisteduclub(int numerodutitredanslaliste);
 
     Club_class(std::string nomduclub, std::string histoire,std::string couleur,std::string ville,Date_class* ptrdatecreation, Stade_class* ptrstade, Entraineur_class* ptrentraineur);
+    ~Club_class();
 };
 
 

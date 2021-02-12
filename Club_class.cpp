@@ -63,5 +63,9 @@ this->ptrEntraineurDeLequipe = ptrentraineur;
 }
 
 std::string Club_class::getnomduclub() {
-    return std::string();
+    return std::string(nomduclub_string);
+}
+
+Club_class::~Club_class() {
+ delete this->ptrDateDeCreationDuClub;
 }

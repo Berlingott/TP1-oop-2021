@@ -52,4 +52,8 @@ void LigueSportive_class::ajouterUnClubAuRpertoire(Club_class *ptrclubclass) {
     repertoireClub_vector.push_back(ptrclubclass);
 }
 
+void LigueSportive_class::supprimerUnClubDuRegistre(int positionDansregistre) {
+    repertoireClub_vector.erase (repertoireClub_vector.begin()+positionDansregistre);
+}
+
 
