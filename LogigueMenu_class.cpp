@@ -40,6 +40,10 @@ int LogigueMenu_class::verificationDuChoix_int() {
         case 7:
             ajouterUnNouveauStade();
             break;
+        case 0:
+            afficherLesPlusTitree();
+            break;
+
         case 9:
             quitter = true;
             break;
@@ -87,13 +91,14 @@ void LogigueMenu_class::afficherTousLesJoueur() {
 }
 
 void LogigueMenu_class::enregistrerUnNouveauClub() {//todo la creation de club
-    int etape=1, jour, mois, annee, nombredejoueur, nombredetitre, choixpourvecteur;
+    int etape=1, jour, mois, annee, etapesecond = 1, nombredetitre=0, choixpourvecteur;
     Club_class* ptrclubenconstruction = nullptr;
     Date_class* ptrdatedecreationduclubenconstruction = nullptr;
     Entraineur_class* ptrentraineurduclubencreation = nullptr;
     TitreGagnee* ptrtitrepourclubencreation = nullptr;
-    std::string nom, couleur, ville, addresse;
+    std::string nom, couleur, ville, histoire;
     Stade_class* ptrstadeduclubencreation;
+    char choixdelutilisateur = 'y';
 
     AffichageDesMenu_class::affichageCreationDeClub(etape);
     std::cin >> nom;
@@ -105,10 +110,7 @@ void LogigueMenu_class::enregistrerUnNouveauClub() {//todo la creation de club
     std::cin >> ville;
     etape++;
     AffichageDesMenu_class::affichageCreationDeClub(etape);
-    std::cin >> addresse;
-    etape++;
-    AffichageDesMenu_class::affichageCreationDeClub(etape);
-    std::cin >> nom;
+    std::cin >> histoire;
     etape++;
     AffichageDesMenu_class::affichageCreationDeClub(etape);
     std::cin >> annee;
@@ -127,33 +129,41 @@ void LogigueMenu_class::enregistrerUnNouveauClub() {//todo la creation de club
     etape++;
     std::cin >> choixpourvecteur;
     choixpourvecteur--;
-    ptrentraineurduclubencreation = ligueSportiveClass.getPtrEntraineurDuRegistre(choixpourvecteur);
+    ptrentraineurduclubencreation = ligueSportiveClass->getPtrEntraineurDuRegistre(choixpourvecteur);
 
-    afficherTousLesStade();
+    afficherTousLesStades();
     AffichageDesMenu_class::affichageCreationDeClub(etape);
     etape++;
     std::cin >> choixpourvecteur;
-    ptrstadeduclubencreation = ligueSportiveClass.getStadeDuRegistre(choixpourvecteur);
+    choixpourvecteur--;
+    ptrstadeduclubencreation = ligueSportiveClass->getPtrStadeDuRegistre(choixpourvecteur);
 
-
-
-
-
-
+    ptrclubenconstruction = new Club_class(nom,histoire,couleur,ville,ptrdatedecreationduclubenconstruction, ptrstadeduclubencreation,ptrentraineurduclubencreation);
 
     AffichageDesMenu_class::affichageCreationDeClub(etape);
-    std::cin >> jour;
-    etape++;
-    AffichageDesMenu_class::affichageCreationDeClub(etape);
-    std::cin >> jour;
-    etape++;
-    AffichageDesMenu_class::affichageCreationDeClub(etape);
-    std::cin >> jour;
+    std::cin >> nombredetitre;
     etape++;
 
+    for (int i = 0 ; i < nombredetitre ; i++) {
+        affichageDesMenuClass->afficherNumero(i+1);
+        ptrclubenconstruction->ajouterUnTitre(creationDunTitre());
+    }
+    while (choixdelutilisateur == 'y'){
+        int choixdujoueur;
 
+        afficherTousLesJoueur();
+        affichageDesMenuClass->afficherAjoutDeJoueurClub(etapesecond);
+        etapesecond++;
+        std::cin >> choixdujoueur;
 
+        ptrclubenconstruction->ajouterJoueurALaListe(ligueSportiveClass->getPtrJoueurDuRegistre(choixdujoueur-1));
 
+        affichageDesMenuClass->afficherAjoutDeJoueurClub(etapesecond);
+        etapesecond--;
+        std::cin >> choixdelutilisateur;
+    }
+    ligueSportiveClass->ajouterUnClubAuRpertoire(ptrclubenconstruction);
+    affichageDesMenuClass->affichageCreationDeClub(etape);
 }
 
 void LogigueMenu_class::ajouterJoueurAuClub() {
@@ -164,6 +174,7 @@ void LogigueMenu_class::ajouterUnNouvelEntraineur() {
     std::string prenomEntraineur, nomEntraineur, lieuObtentionDuGrade;
     Entraineur_class* nouvelEntraineur;
     int etape = 1;
+    int nombredetitre;
 
     affichageDesMenuClass->affichageCreationEntraineur(etape);
     etape++;
@@ -177,10 +188,20 @@ void LogigueMenu_class::ajouterUnNouvelEntraineur() {
 
     nouvelEntraineur = new Entraineur_class(prenomEntraineur, nomEntraineur, lieuObtentionDuGrade);
 
+    affichageDesMenuClass->affichageCreationEntraineur(etape);
+    std::cin >> nombredetitre;
+    etape++;
+
+    for (int i = 0 ; i < nombredetitre ; i++) {
+        affichageDesMenuClass->afficherNumero(i+1);
+        nouvelEntraineur->ajouterUnTitre(creationDunTitre());
+    }
+
+
     ligueSportiveClass->ajouterUnEntraineurAuRpertoire(nouvelEntraineur);
 
-    //todo ajouter l'entraineur
     affichageDesMenuClass->affichageCreationEntraineur(etape);
+
 }
 
 void LogigueMenu_class::ajouterUnNouveauStade() {
@@ -216,5 +237,84 @@ void LogigueMenu_class::afficherTousLesEntraineur() {
         ptrpresententraineur = ligueSportiveClass->getPtrEntraineurDuRegistre(i);
         affichageDesMenuClass->afficherUnEntraineur(ptrpresententraineur->getNomEntraineur(), ptrpresententraineur->getPrenomEntraineur());
     }
+}
+
+void LogigueMenu_class::afficherTousLesStades() {
+    Stade_class* ptrpresentStade;
+    for (int i =0; i<ligueSportiveClass->getGrandeurDuRepertoireDesStade() ; i++) {
+        affichageDesMenuClass->afficherNumero(i+1);
+        ptrpresentStade = ligueSportiveClass->getPtrStadeDuRegistre(i);
+        affichageDesMenuClass->afficherUnStade(ptrpresentStade->getnomDuStade(), ptrpresentStade->getadresseDuStade(), ptrpresentStade->getcapaciteMax());
+    }
+}
+
+TitreGagnee *LogigueMenu_class::creationDunTitre() {
+
+    int annee,mois,jour;
+    int etape = 1;
+    Date_class* ptrDateDObtention;
+    std::string nomDuTitre;
+
+    affichageDesMenuClass->afficherCreationDunTitre(etape);
+    etape++;
+    std::cin >> nomDuTitre;
+    affichageDesMenuClass->afficherCreationDunTitre(etape);
+    etape++;
+    std::cin >> annee;
+    affichageDesMenuClass->afficherCreationDunTitre(etape);
+    etape++;
+    std::cin >> mois;
+    affichageDesMenuClass->afficherCreationDunTitre(etape);
+    std::cin >> jour;
+
+    ptrDateDObtention = new Date_class(jour,mois,annee);
+
+    return new TitreGagnee(ptrDateDObtention, nomDuTitre);
+}
+
+void LogigueMenu_class::afficherLesJoueursDunClub() {
+    int choixdelutilisateur, etape=1;
+    Club_class* ptrclubselectionnee;
+
+    affichageDesMenuClass->affichageJoueurClub(etape);
+    etape++;
+    afficherSeulementNomtousLesClub();
+    affichageDesMenuClass->affichageJoueurClub(etape);
+    etape++;
+    std::cin >> choixdelutilisateur;
+
+    affichageDesMenuClass->affichageJoueurClub(etape);
+
+    ptrclubselectionnee = ligueSportiveClass->getPtrClubDuRegistre(choixdelutilisateur);
+
+    for (int i = 0; i < ptrclubselectionnee->getnombredejoueurtotalduclub(); ++i) {
+        AffichageDesMenu_class::afficherUnJoueur(ptrclubselectionnee->getptrdunjoueurspecifique(i)->getprenomDuJoueur(), ptrclubselectionnee->getptrdunjoueurspecifique(i)->getnomDuJoueur(), ptrclubselectionnee->getptrdunjoueurspecifique(i)->getpoidsDuJoeur(), ptrclubselectionnee->getptrdunjoueurspecifique(i)->gettailleDuJoueur(),ptrclubselectionnee->getptrdunjoueurspecifique(i)->getvilleDeNaissanceDuJoueur());
+    }
+}
+
+void LogigueMenu_class::afficherSeulementNomtousLesClub() {
+    Club_class* clubselectionnee = nullptr;
+    for (int i = 0; i < ligueSportiveClass->getGrandeurDuRepertoireDesClubs(); ++i) {
+        clubselectionnee = ligueSportiveClass->getPtrClubDuRegistre(i);
+        affichageDesMenuClass->afficherNumero(i+1);
+        affichageDesMenuClass->affichernomdunclub(clubselectionnee->getnomduclub(), clubselectionnee->getcouleurduclub());
+    }
+}
+
+void LogigueMenu_class::afficherLesPlusTitree() {
+    Club_class* ptrClubLePlusTitree = ligueSportiveClass->getPtrClubDuRegistre(ligueSportiveClass->getGrandeurDuRepertoireDesClubs());
+    Entraineur_class* ptrEntraineurLePlusTitree = ligueSportiveClass->getPtrEntraineurDuRegistre(ligueSportiveClass->getGrandeurDuRepertoireDesEntraineur());
+
+    for (int i = 0; i < ligueSportiveClass->getGrandeurDuRepertoireDesClubs(); ++i) {
+        if (ptrClubLePlusTitree->getnombredetitreduclub()<ligueSportiveClass->getPtrClubDuRegistre(i)->getnombredetitreduclub()){
+            ptrClubLePlusTitree = ligueSportiveClass->getPtrClubDuRegistre(i);
+        }
+    }
+    for (int i = 0; i < ligueSportiveClass->getGrandeurDuRepertoireDesEntraineur() ; ++i) {
+        if(ptrEntraineurLePlusTitree->getNombreDeTitreDeLentraineur() < ligueSportiveClass->getPtrEntraineurDuRegistre(i)->getNombreDeTitreDeLentraineur()){
+            ptrEntraineurLePlusTitree = ligueSportiveClass->getPtrEntraineurDuRegistre(i);
+        }
+    }
+    affichageDesMenuClass->afficherLesPlusTitree(ptrClubLePlusTitree->getnomduclub(),ptrClubLePlusTitree->getcouleurduclub(),ptrClubLePlusTitree->getnombredetitreduclub(),ptrEntraineurLePlusTitree->getPrenomEntraineur(),ptrEntraineurLePlusTitree->getNomEntraineur(),ptrEntraineurLePlusTitree->getNombreDeTitreDeLentraineur());
 }
 

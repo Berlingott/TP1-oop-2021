@@ -23,3 +23,11 @@ Entraineur_class::Entraineur_class(std::string prenomentraineur, std::string nom
     this->nomEntraineur = std::move(nomentraineur);
     this->lieuObtentionDuGrade = std::move(lieudugrade);
 }
+
+void Entraineur_class::ajouterUnTitre(TitreGagnee *ptrtitre) {
+    Palmares.push_back(ptrtitre);
+}
+
+int Entraineur_class::getNombreDeTitreDeLentraineur() {
+    return Palmares.size();
+}

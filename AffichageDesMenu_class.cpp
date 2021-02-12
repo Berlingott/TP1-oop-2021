@@ -10,9 +10,12 @@ void AffichageDesMenu_class::afficherMenuPrincipale() {
     std::cout << "2) Afficher tous les joueurs enregistrés" << std::endl;
     std::cout << "3) Enregistrer un nouveau club" << std::endl;
     std::cout << "4) Afficher Tous les club " << std::endl;
-    std::cout << "5) " << std::endl;
+    std::cout << "5) Enregistrer un entraineur " << std::endl;
     std::cout << "6) Afficher tous les entraineurs" << std::endl;
     std::cout << "7) Enregistrer un nouveau stade" << std::endl;
+    std::cout << "8) Afficher les joueur d'un club" << std::endl;
+    std::cout << "0) Afficher le club et l'entraineur les plus titrés" << std::endl;
+
     std::cout << "9) Quitter" << std::endl;
     std::cout << "Veuillez entrer votre choix (ex:3) :";
 }
@@ -59,34 +62,35 @@ void AffichageDesMenu_class::affichageCreationDeClub(int etape) {
         std::cout << "Veuillez entrer le nom du club:";
     }
     if (etape==2){
-        std::cout << "Veuillez entrer la couleur du club";
+        std::cout << "Veuillez entrer la couleur du club:";
     }
     if (etape==3){
-        std::cout << "Veuillez entrer la couleur du club";
+        std::cout << "Veuillez entrer la ville du club:";
     }
     if (etape==4){
         std::cout << "Veuillez faire un résumé de l'histoire du club:";
     }
     if (etape==5){
-        std::cout << "Voici la liste des joueurs enregistrer:" << std::endl;
-    }
-    if (etape==5){
-        std::cout << "Voulez-vous créer un nouveau joueur maintenant(celui-ci sera automatiquement join au club)?:" << std::endl;
-    }
-    if (etape==5){
-        std::cout << "Voulez-vous créer un nouveau joueur maintenant(celui-ci sera automatiquement join au club)?(y/n):" << std::endl;
+        std::cout << "Veuillez entrer la date de création du club." << std::endl;
+        std::cout << "Année (ex:1995):";
     }
     if (etape==6){
-        std::cout << "Voulez-vous créer un autre nouveau joueur?(y/n)";
+        std::cout << "mois (ex:06):";
     }
     if (etape==7){
-        std::cout << "Voulez-vous entrer un joueur déjà existant? (y/n)";
+        std::cout << "jour (ex:20):";
     }
     if (etape==8){
-        std::cout << "Veuillez entrer le numméro du joueur à ajouter:";
+        std::cout << "Veuillez entrer le numéro de l'entraineur:";
     }
     if (etape==9){
-        std::cout << "Le club a été créé.";
+        std::cout << "Veuillez entrer le numéro associé au stade pour l'équipe:";
+    }
+    if (etape==10){
+        std::cout << "Combien de titre le club a-t'il à son actif?";
+    }
+    if (etape==11){
+        std::cout << "Création du Club complété.";
     }
 }
 
@@ -101,8 +105,10 @@ void AffichageDesMenu_class::affichageCreationEntraineur(int etape) {
     if (etape==3){
         std::cout << "Veuillez entrer la ville d'obtention du grade de l'entraineur:";
     }
-
     if (etape==4){
+        std::cout << "Veuillez entrer le nombre de titre de l'entraineur:";
+    }
+    if (etape==5){
         std::cout << "Entraineur créé." << std::endl;
     }
 }
@@ -126,12 +132,78 @@ void AffichageDesMenu_class::affichageDeCreationDunStade(int etape) {
 }
 
 void AffichageDesMenu_class::afficherNumero(int numero) {
-std::cout << "numéro d'enregistrement: " << numero;
+std::cout << "numéro d'enregistrement: " << numero << std::endl;
 }
 
 void AffichageDesMenu_class::afficherUnEntraineur(std::string nom, std::string prenom) {
     std::cout << "Prenom: " << prenom << std::endl;
-    std::cout << "Nom: " << nom;
+    std::cout << "Nom: " << nom << std::endl;
 }
 
+void AffichageDesMenu_class::afficherUnStade(std::string nomdustade, std::string adresse, int capmax) {
+    std::cout << "Stade: " << nomdustade << std::endl;
+    std::cout << "Adresse: " << adresse << std::endl;
+    std::cout << "Capacité maximale: " << capmax <<std::endl ;
+}
+
+void AffichageDesMenu_class::afficherCreationDunTitre(int etape) {
+    if (etape==1){
+        std::cout << "Veuillez entrer le nom du titre:";
+    }
+    if (etape==2){
+        std::cout << "Veuillez entrer la date d'obtention." << std::endl;
+        std::cout << "Année (ex:2002):";
+    }
+    if (etape==3){
+        std::cout << "Mois (ex:06):";
+    }
+    if (etape==4){
+        std::cout << "Jour (ex:04):";
+    }
+}
+
+void AffichageDesMenu_class::afficherAjoutDeJoueurClub(int etape) {
+    if (etape == 1){
+        std::cout << "Entrer le numéro associé au joueur:";
+    }
+    if (etape == 2){
+        std::cout << "Voullez-vous entrer un autre joueur dans le club ? (y/n): ";
+    }
+}
+
+void AffichageDesMenu_class::affichageJoueurClub(int etape) {
+    if (etape == 1){
+        std::cout << "Voici tous les clubs enregistrés: " << std::endl;
+    }
+    if (etape == 2){
+        std::cout << "Veuillez entrer le numéro associé au club dont vous voullez voir les joueurs";
+    }
+    if (etape == 3){
+        std::cout << "Voici les joueurs du club sélectionné" << std::endl;
+    }
+}
+
+void AffichageDesMenu_class::affichernomdunclub(std::string nom, std::string couleur) {
+    std::cout << "Nom du club: " << nom;
+    std::cout << "Couleur du club: " << couleur;
+}
+
+void AffichageDesMenu_class::afficherLesPlusTitree(std::string nomClub, std::string couleurClub, int nombreTitreClub,
+                                                   std::string prenomEntraineur, std::string nomEntraineur,
+                                                   int nombbreTitreEntraineur) {
+    std::cout << "===== Club le plus titré =====" << std::endl;
+    std::cout << "Club: " << nomClub << std::endl;
+    std::cout << "Couleur du club: " << couleurClub << std::endl;
+    std::cout << "Total de titre: " << nombreTitreClub << std::endl;
+    std::cout << "==============================" << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "===== Entraineur le plus titré =====" << std::endl;
+    std::cout << "Prenom: " << prenomEntraineur << std::endl;
+    std::cout << "Nom: " << nomEntraineur << std::endl;
+    std::cout << "Nombre de Titre: " << nombbreTitreEntraineur << std::endl;
+    std::cout << "==============================" << std::endl;
+    std::cout << std::endl;
+
+}
 

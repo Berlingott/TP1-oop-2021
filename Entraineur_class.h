@@ -12,16 +12,15 @@
 class Entraineur_class {
 private:
     std::string nomEntraineur, prenomEntraineur, lieuObtentionDuGrade;
-
+    std::vector<TitreGagnee*>Palmares;
 protected:
 public:
     std::string getNomEntraineur();
     std::string getPrenomEntraineur();
     std::string getLieuObtentionDuGrade();
-    std::vector<TitreGagnee*> Palmares;
+    int getNombreDeTitreDeLentraineur();
     Entraineur_class(std::string prenomentraineur, std::string nomentraineur, std::string lieudugrade);
-
-
+    void ajouterUnTitre(TitreGagnee* ptrtitre);
 };
 
 

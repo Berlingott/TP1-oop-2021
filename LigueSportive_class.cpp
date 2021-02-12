@@ -41,11 +41,15 @@ Entraineur_class *LigueSportive_class::getPtrEntraineurDuRegistre(int positionDa
 }
 
 Club_class *LigueSportive_class::getPtrClubDuRegistre(int positionDansVecteur) {
-    return repertoireClub_vector.[positionDansVecteur];
+    return repertoireClub_vector[positionDansVecteur];
 }
 
 Stade_class *LigueSportive_class::getPtrStadeDuRegistre(int positionDansVecteur) {
     return repertoireStade_vector[positionDansVecteur];
+}
+
+void LigueSportive_class::ajouterUnClubAuRpertoire(Club_class *ptrclubclass) {
+    repertoireClub_vector.push_back(ptrclubclass);
 }
 
 

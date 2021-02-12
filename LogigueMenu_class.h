@@ -10,7 +10,7 @@
 #include <iostream>
 #include "InformationMembreEffectifDuClub_class.h"
 #include "Stade_class.h"
-
+#include "TitreGagnee.h"
 
 class LogigueMenu_class {
 private:
@@ -18,6 +18,7 @@ private:
     LigueSportive_class* ligueSportiveClass;
     int choixDuMenuPrincipale_int;
     bool quitter = false;
+
 private:
 public:
     LogigueMenu_class();
@@ -32,6 +33,12 @@ public:
     void ajouterUnNouvelEntraineur();
     void ajouterUnNouveauStade();
     void afficherTousLesEntraineur();
+    void afficherTousLesStades();
+    TitreGagnee* creationDunTitre();
+    void afficherLesJoueursDunClub();
+    void afficherSeulementNomtousLesClub();
+    void afficherLesPlusTitree();
+
 };
 
 

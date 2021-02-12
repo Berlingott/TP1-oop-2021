@@ -17,7 +17,7 @@
 
 class Club_class {
 private:
-    std::string histoireDuClub_string, couleurDuClub_string, villeDuClub_string, adresseDuClub_string;
+    std::string histoireDuClub_string, couleurDuClub_string, villeDuClub_string, nomduclub_string;
     Date_class* ptrDateDeCreationDuClub;
     Stade_class* ptrDuStadeDuClub;
     Entraineur_class* ptrEntraineurDeLequipe;
@@ -28,6 +28,7 @@ public:
     void ajouterUnTitre(TitreGagnee* ptrtitreaajouter);
     void ajouterJoueurALaListe(Joueur_class* ptrjoueuraajouterauclub);
 
+    std::string getnomduclub();
     std::string gethistoireduclub();
     std::string getcouleurduclub();
     std::string getvilleduclub();
@@ -38,6 +39,8 @@ public:
     int getnombredejoueurtotalduclub();
     Joueur_class* getptrdunjoueurspecifique(int numerodujoueurdanslaliste);
     TitreGagnee* getptrduntitrespecifiquedelalisteduclub(int numerodutitredanslaliste);
+
+    Club_class(std::string nomduclub, std::string histoire,std::string couleur,std::string ville,Date_class* ptrdatecreation, Stade_class* ptrstade, Entraineur_class* ptrentraineur);
 };
 
 
