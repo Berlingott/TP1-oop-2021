@@ -17,6 +17,10 @@ public:
     void affichageEnregistrerJoueur_void(int etape);
     static void afficherUnJoueur(std::string prenom, std::string nom, float poids, float taille, std::string villedenaissance);
     static void affichageCreationDeClub(int etape);
+    void affichageCreationEntraineur(int etape);
+    void affichageDeCreationDunStade(int etape);
+    void afficherNumero(int numero);
+    void afficherUnEntraineur(std::string nom, std::string prenom);
 };
 
 

@@ -194,6 +194,32 @@ CMakeFiles/tp1_Poo_2021.dir/InformationMembreEffectifDuClub_class.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tp1_Poo_2021.dir/InformationMembreEffectifDuClub_class.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/simonduchesne/Desktop/tp1 Poo 2021/InformationMembreEffectifDuClub_class.cpp" -o CMakeFiles/tp1_Poo_2021.dir/InformationMembreEffectifDuClub_class.cpp.s
 
+CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.o: CMakeFiles/tp1_Poo_2021.dir/flags.make
+CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.o: ../Date_class.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/simonduchesne/Desktop/tp1 Poo 2021/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.o -c "/Users/simonduchesne/Desktop/tp1 Poo 2021/Date_class.cpp"
+
+CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/simonduchesne/Desktop/tp1 Poo 2021/Date_class.cpp" > CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.i
+
+CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/simonduchesne/Desktop/tp1 Poo 2021/Date_class.cpp" -o CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.s
+
+CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.o: CMakeFiles/tp1_Poo_2021.dir/flags.make
+CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.o: ../TitreGagnee.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/simonduchesne/Desktop/tp1 Poo 2021/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.o -c "/Users/simonduchesne/Desktop/tp1 Poo 2021/TitreGagnee.cpp"
+
+CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/simonduchesne/Desktop/tp1 Poo 2021/TitreGagnee.cpp" > CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.i
+
+CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/simonduchesne/Desktop/tp1 Poo 2021/TitreGagnee.cpp" -o CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.s
+
 # Object files for target tp1_Poo_2021
 tp1_Poo_2021_OBJECTS = \
 "CMakeFiles/tp1_Poo_2021.dir/main.cpp.o" \
@@ -204,7 +230,9 @@ tp1_Poo_2021_OBJECTS = \
 "CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.o" \
 "CMakeFiles/tp1_Poo_2021.dir/AffichageDesMenu_class.cpp.o" \
 "CMakeFiles/tp1_Poo_2021.dir/LogigueMenu_class.cpp.o" \
-"CMakeFiles/tp1_Poo_2021.dir/InformationMembreEffectifDuClub_class.cpp.o"
+"CMakeFiles/tp1_Poo_2021.dir/InformationMembreEffectifDuClub_class.cpp.o" \
+"CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.o" \
+"CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.o"
 
 # External object files for target tp1_Poo_2021
 tp1_Poo_2021_EXTERNAL_OBJECTS =
@@ -218,9 +246,11 @@ tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.o
 tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/AffichageDesMenu_class.cpp.o
 tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/LogigueMenu_class.cpp.o
 tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/InformationMembreEffectifDuClub_class.cpp.o
+tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.o
+tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.o
 tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/build.make
 tp1_Poo_2021: CMakeFiles/tp1_Poo_2021.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/simonduchesne/Desktop/tp1 Poo 2021/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable tp1_Poo_2021"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/simonduchesne/Desktop/tp1 Poo 2021/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable tp1_Poo_2021"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tp1_Poo_2021.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

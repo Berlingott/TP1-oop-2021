@@ -92,6 +92,12 @@
 		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/Club_class.h">
 			<Option target="tp1_Poo_2021"/>
 		</Unit>
+		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/Date_class.cpp">
+			<Option target="tp1_Poo_2021"/>
+		</Unit>
+		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/Date_class.h">
+			<Option target="tp1_Poo_2021"/>
+		</Unit>
 		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.cpp">
 			<Option target="tp1_Poo_2021"/>
 		</Unit>
@@ -126,6 +132,12 @@
 			<Option target="tp1_Poo_2021"/>
 		</Unit>
 		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/Stade_class.h">
+			<Option target="tp1_Poo_2021"/>
+		</Unit>
+		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/TitreGagnee.cpp">
+			<Option target="tp1_Poo_2021"/>
+		</Unit>
+		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/TitreGagnee.h">
 			<Option target="tp1_Poo_2021"/>
 		</Unit>
 		<Unit filename="/Users/simonduchesne/Desktop/tp1 Poo 2021/main.cpp">

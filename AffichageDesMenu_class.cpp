@@ -10,10 +10,11 @@ void AffichageDesMenu_class::afficherMenuPrincipale() {
     std::cout << "2) Afficher tous les joueurs enregistrés" << std::endl;
     std::cout << "3) Enregistrer un nouveau club" << std::endl;
     std::cout << "4) Afficher Tous les club " << std::endl;
-    std::cout << "5) en construction" << std::endl;
-    std::cout << "6) en construction" << std::endl;
+    std::cout << "5) " << std::endl;
+    std::cout << "6) Afficher tous les entraineurs" << std::endl;
+    std::cout << "7) Enregistrer un nouveau stade" << std::endl;
     std::cout << "9) Quitter" << std::endl;
-    std::cout << "Veuillez entrer votre choix:";
+    std::cout << "Veuillez entrer votre choix (ex:3) :";
 }
 
 void AffichageDesMenu_class::afficherLancementdeLApp_void() {
@@ -47,17 +48,18 @@ void AffichageDesMenu_class::afficherUnJoueur(std::string prenom, std::string no
                                               std::string villedenaissance) {
     std::cout << std::endl;
     std::cout << prenom << " " << nom << std::endl;
-    std::cout << "Taille:" << taille << std::endl;
-    std::cout << "Poids:" << poids << std::endl;
+    std::cout << "Taille: " << taille << std::endl;
+    std::cout << "Poids: " << poids << std::endl;
     std::cout << "Ville de naissance: " << villedenaissance << std::endl;
 }
 
 void AffichageDesMenu_class::affichageCreationDeClub(int etape) {
     if (etape==1){
         std::cout << "Création d'un club en cours"<< std::endl;
+        std::cout << "Veuillez entrer le nom du club:";
     }
     if (etape==2){
-        std::cout << "Veuillez entrer le nom du club:";
+        std::cout << "Veuillez entrer la couleur du club";
     }
     if (etape==3){
         std::cout << "Veuillez entrer la couleur du club";
@@ -86,6 +88,50 @@ void AffichageDesMenu_class::affichageCreationDeClub(int etape) {
     if (etape==9){
         std::cout << "Le club a été créé.";
     }
+}
+
+void AffichageDesMenu_class::affichageCreationEntraineur(int etape) {
+    if (etape==1){
+        std::cout << "Création d'un entraineur" << std::endl;
+        std::cout << "Veuillez entrer le prénom de l'entraineur: ";
+    }
+    if (etape==2){
+        std::cout << "Veuillez entrer le nom de l'entraineur: ";
+    }
+    if (etape==3){
+        std::cout << "Veuillez entrer la ville d'obtention du grade de l'entraineur:";
+    }
+
+    if (etape==4){
+        std::cout << "Entraineur créé." << std::endl;
+    }
+}
+
+void AffichageDesMenu_class::affichageDeCreationDunStade(int etape) {
+
+    if (etape==1){
+        std::cout << "Création d'un Stade" << std::endl;
+        std::cout << "Veuillez entrer le nom du stade:";
+    }
+    if (etape==2){
+        std::cout << "Veuillez entrer l'addresse du stade:";
+    }
+    if (etape==3){
+        std::cout << "Veuillez entrer la capacité maximal du stade(ex:3400):";
+    }
+    if (etape==4){
+        std::cout << "Veuillez indiquer le type du stade" << std::endl;
+        std::cout << "Type de stade (ex:tartan)";
+    }
+}
+
+void AffichageDesMenu_class::afficherNumero(int numero) {
+std::cout << "numéro d'enregistrement: " << numero;
+}
+
+void AffichageDesMenu_class::afficherUnEntraineur(std::string nom, std::string prenom) {
+    std::cout << "Prenom: " << prenom << std::endl;
+    std::cout << "Nom: " << nom;
 }
 
 

@@ -23,4 +23,3 @@ Entraineur_class::Entraineur_class(std::string prenomentraineur, std::string nom
     this->nomEntraineur = std::move(nomentraineur);
     this->lieuObtentionDuGrade = std::move(lieudugrade);
 }
-

@@ -25,7 +25,10 @@ public:
     int getGrandeurDuRepertoireDesStade();
     int getGrandeurDuRepertoireDesEntraineur();
 
+    Entraineur_class* getPtrEntraineurDuRegistre(int positionDansVecteur);
     Joueur_class* getPtrJoueurDuRegistre(int positionDansVecteur);
+    Club_class* getPtrClubDuRegistre(int positionDansVecteur);
+    Stade_class* getPtrStadeDuRegistre(int poistionDansVecteur);
 
     void getInformationDuJoueur(int positionJoueurChercher);
     void ajouterUnClubAuRpertoire(Club_class* ptrclubclass);//todo

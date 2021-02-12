@@ -9,11 +9,20 @@
 
 class Stade_class {
 private:
+    std::string typeDeCeTerrain;
     int capaciteMax_int;
     std::string nomDuStade_string, adresseDuStade_string;
 
+
 protected:
 public:
+    int getcapaciteMax();
+    std::string getnomDuStade();
+    std::string getadresseDuStade();
+
+
+
+    Stade_class(std::string nomdustade, std::string addressedustade, int capacitemax, std::string typedeceterrain );
 };
 
 

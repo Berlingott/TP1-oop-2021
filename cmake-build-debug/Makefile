@@ -197,6 +197,33 @@ Club_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Club_class.cpp.s
 .PHONY : Club_class.cpp.s
 
+Date_class.o: Date_class.cpp.o
+
+.PHONY : Date_class.o
+
+# target to build an object file
+Date_class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.o
+.PHONY : Date_class.cpp.o
+
+Date_class.i: Date_class.cpp.i
+
+.PHONY : Date_class.i
+
+# target to preprocess a source file
+Date_class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.i
+.PHONY : Date_class.cpp.i
+
+Date_class.s: Date_class.cpp.s
+
+.PHONY : Date_class.s
+
+# target to generate assembly for a file
+Date_class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Date_class.cpp.s
+.PHONY : Date_class.cpp.s
+
 Entraineur_class.o: Entraineur_class.cpp.o
 
 .PHONY : Entraineur_class.o
@@ -359,6 +386,33 @@ Stade_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Stade_class.cpp.s
 .PHONY : Stade_class.cpp.s
 
+TitreGagnee.o: TitreGagnee.cpp.o
+
+.PHONY : TitreGagnee.o
+
+# target to build an object file
+TitreGagnee.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.o
+.PHONY : TitreGagnee.cpp.o
+
+TitreGagnee.i: TitreGagnee.cpp.i
+
+.PHONY : TitreGagnee.i
+
+# target to preprocess a source file
+TitreGagnee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.i
+.PHONY : TitreGagnee.cpp.i
+
+TitreGagnee.s: TitreGagnee.cpp.s
+
+.PHONY : TitreGagnee.s
+
+# target to generate assembly for a file
+TitreGagnee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/TitreGagnee.cpp.s
+.PHONY : TitreGagnee.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -401,6 +455,9 @@ help:
 	@echo "... Club_class.o"
 	@echo "... Club_class.i"
 	@echo "... Club_class.s"
+	@echo "... Date_class.o"
+	@echo "... Date_class.i"
+	@echo "... Date_class.s"
 	@echo "... Entraineur_class.o"
 	@echo "... Entraineur_class.i"
 	@echo "... Entraineur_class.s"
@@ -419,6 +476,9 @@ help:
 	@echo "... Stade_class.o"
 	@echo "... Stade_class.i"
 	@echo "... Stade_class.s"
+	@echo "... TitreGagnee.o"
+	@echo "... TitreGagnee.i"
+	@echo "... TitreGagnee.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -28,3 +28,24 @@ Joueur_class *LigueSportive_class::getPtrJoueurDuRegistre(int positionDansVecteu
     return repertoireJoeur_vector[positionDansVecteur];
 }
 
+void LigueSportive_class::ajouterUnEntraineurAuRpertoire(Entraineur_class *ptrentraineurclass) {
+repertoireEntraineur_vector.push_back(ptrentraineurclass);
+}
+
+void LigueSportive_class::ajouterUnStadeAuRpertoire(Stade_class *ptrstadeclass) {
+    repertoireStade_vector.push_back(ptrstadeclass);
+}
+
+Entraineur_class *LigueSportive_class::getPtrEntraineurDuRegistre(int positionDansVecteur) {
+    return repertoireEntraineur_vector[positionDansVecteur];
+}
+
+Club_class *LigueSportive_class::getPtrClubDuRegistre(int positionDansVecteur) {
+    return repertoireClub_vector.[positionDansVecteur];
+}
+
+Stade_class *LigueSportive_class::getPtrStadeDuRegistre(int positionDansVecteur) {
+    return repertoireStade_vector[positionDansVecteur];
+}
+
+

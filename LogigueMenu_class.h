@@ -9,7 +9,7 @@
 #include "Joueur_class.h"
 #include <iostream>
 #include "InformationMembreEffectifDuClub_class.h"
-
+#include "Stade_class.h"
 
 
 class LogigueMenu_class {
@@ -28,8 +28,10 @@ public:
     void enregistrerUnNouveauJoueur();
     void afficherTousLesJoueur();
     void enregistrerUnNouveauClub();
-    void enregisrerUnNouveauStade();
     void ajouterJoueurAuClub();
+    void ajouterUnNouvelEntraineur();
+    void ajouterUnNouveauStade();
+    void afficherTousLesEntraineur();
 };
 
 
