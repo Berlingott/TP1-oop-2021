@@ -21,6 +21,7 @@ public:
     int getNombreDeTitreDeLentraineur();
     Entraineur_class(std::string prenomentraineur, std::string nomentraineur, std::string lieudugrade);
     void ajouterUnTitre(TitreGagnee* ptrtitre);
+    ~Entraineur_class();
 };
 
 

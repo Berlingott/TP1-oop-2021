@@ -17,6 +17,7 @@ public:
     Date_class* getptrDateDObtention();
 
     TitreGagnee(Date_class* ptrdateobtention, std::string nomdutit);
+    ~TitreGagnee();
 };
 
 

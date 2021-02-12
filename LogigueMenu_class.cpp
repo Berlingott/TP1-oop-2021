@@ -358,3 +358,8 @@ void LogigueMenu_class::supprimerUnClub() {
     }
 }
 
+LogigueMenu_class::~LogigueMenu_class() {
+    delete affichageDesMenuClass;
+    delete ligueSportiveClass;
+}
+

@@ -20,10 +20,6 @@ CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.o
  /Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.cpp
  /Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.h
  /Users/simonduchesne/Desktop/tp1 Poo 2021/TitreGagnee.h
-CMakeFiles/tp1_Poo_2021.dir/InformationMembreEffectifDuClub_class.cpp.o
- /Users/simonduchesne/Desktop/tp1 Poo 2021/InformationMembreEffectifDuClub_class.cpp
- /Users/simonduchesne/Desktop/tp1 Poo 2021/InformationMembreEffectifDuClub_class.h
- /Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.h
 CMakeFiles/tp1_Poo_2021.dir/Joueur_class.cpp.o
  /Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.cpp
  /Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.h
@@ -41,7 +37,6 @@ CMakeFiles/tp1_Poo_2021.dir/LogigueMenu_class.cpp.o
  /Users/simonduchesne/Desktop/tp1 Poo 2021/Club_class.h
  /Users/simonduchesne/Desktop/tp1 Poo 2021/Date_class.h
  /Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.h
- /Users/simonduchesne/Desktop/tp1 Poo 2021/InformationMembreEffectifDuClub_class.h
  /Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.h
  /Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.h
  /Users/simonduchesne/Desktop/tp1 Poo 2021/LogigueMenu_class.cpp
@@ -60,7 +55,6 @@ CMakeFiles/tp1_Poo_2021.dir/main.cpp.o
  /Users/simonduchesne/Desktop/tp1 Poo 2021/Club_class.h
  /Users/simonduchesne/Desktop/tp1 Poo 2021/Date_class.h
  /Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.h
- /Users/simonduchesne/Desktop/tp1 Poo 2021/InformationMembreEffectifDuClub_class.h
  /Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.h
  /Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.h
  /Users/simonduchesne/Desktop/tp1 Poo 2021/LogigueMenu_class.h

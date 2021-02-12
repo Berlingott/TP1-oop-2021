@@ -19,7 +19,7 @@ private:
     std::vector<Stade_class*> repertoireStade_vector;
 protected:
 public:
-    void ajouterUnJoueurAuRpertoire(Joueur_class* ptrjoueurclass);//todo
+    void ajouterUnJoueurAuRpertoire(Joueur_class* ptrjoueurclass);
     int getGrandeurDuRepertoireDesJoueurs();
     int getGrandeurDuRepertoireDesClubs();
     int getGrandeurDuRepertoireDesStade();
@@ -31,10 +31,12 @@ public:
     Stade_class* getPtrStadeDuRegistre(int poistionDansVecteur);
 
     void getInformationDuJoueur(int positionJoueurChercher);
-    void ajouterUnClubAuRpertoire(Club_class* ptrclubclass);//todo
-    void ajouterUnEntraineurAuRpertoire(Entraineur_class* ptrentraineurclass);//todo
-    void ajouterUnStadeAuRpertoire(Stade_class* ptrstadeclass);//todo
+    void ajouterUnClubAuRpertoire(Club_class* ptrclubclass);
+    void ajouterUnEntraineurAuRpertoire(Entraineur_class* ptrentraineurclass);
+    void ajouterUnStadeAuRpertoire(Stade_class* ptrstadeclass);
     void supprimerUnClubDuRegistre(int positionDansregistre);
+
+    ~LigueSportive_class();
 };
 
 

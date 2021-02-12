@@ -67,5 +67,14 @@ std::string Club_class::getnomduclub() {
 }
 
 Club_class::~Club_class() {
- delete this->ptrDateDeCreationDuClub;
+    TitreGagnee* ptrtitre;
+    int size;
+
+    size = Palmares.size();
+    for (int i = 0; i < size; ++i) {
+        ptrtitre = Palmares[0];
+        delete ptrtitre;
+        Palmares.erase(Palmares.begin());
+    }
+    delete this->ptrDateDeCreationDuClub;
 }

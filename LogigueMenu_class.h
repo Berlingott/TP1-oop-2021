@@ -8,7 +8,6 @@
 #include "LigueSportive_class.h"
 #include "Joueur_class.h"
 #include <iostream>
-#include "InformationMembreEffectifDuClub_class.h"
 #include "Stade_class.h"
 #include "TitreGagnee.h"
 
@@ -39,7 +38,7 @@ public:
     void afficherSeulementNomtousLesClub();
     void afficherLesPlusTitree();
     void supprimerUnClub();
-
+    ~LogigueMenu_class();
 };
 
 

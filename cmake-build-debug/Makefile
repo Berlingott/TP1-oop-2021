@@ -251,33 +251,6 @@ Entraineur_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/Entraineur_class.cpp.s
 .PHONY : Entraineur_class.cpp.s
 
-InformationMembreEffectifDuClub_class.o: InformationMembreEffectifDuClub_class.cpp.o
-
-.PHONY : InformationMembreEffectifDuClub_class.o
-
-# target to build an object file
-InformationMembreEffectifDuClub_class.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/InformationMembreEffectifDuClub_class.cpp.o
-.PHONY : InformationMembreEffectifDuClub_class.cpp.o
-
-InformationMembreEffectifDuClub_class.i: InformationMembreEffectifDuClub_class.cpp.i
-
-.PHONY : InformationMembreEffectifDuClub_class.i
-
-# target to preprocess a source file
-InformationMembreEffectifDuClub_class.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/InformationMembreEffectifDuClub_class.cpp.i
-.PHONY : InformationMembreEffectifDuClub_class.cpp.i
-
-InformationMembreEffectifDuClub_class.s: InformationMembreEffectifDuClub_class.cpp.s
-
-.PHONY : InformationMembreEffectifDuClub_class.s
-
-# target to generate assembly for a file
-InformationMembreEffectifDuClub_class.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp1_Poo_2021.dir/build.make CMakeFiles/tp1_Poo_2021.dir/InformationMembreEffectifDuClub_class.cpp.s
-.PHONY : InformationMembreEffectifDuClub_class.cpp.s
-
 Joueur_class.o: Joueur_class.cpp.o
 
 .PHONY : Joueur_class.o
@@ -461,9 +434,6 @@ help:
 	@echo "... Entraineur_class.o"
 	@echo "... Entraineur_class.i"
 	@echo "... Entraineur_class.s"
-	@echo "... InformationMembreEffectifDuClub_class.o"
-	@echo "... InformationMembreEffectifDuClub_class.i"
-	@echo "... InformationMembreEffectifDuClub_class.s"
 	@echo "... Joueur_class.o"
 	@echo "... Joueur_class.i"
 	@echo "... Joueur_class.s"

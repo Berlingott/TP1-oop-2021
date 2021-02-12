@@ -19,3 +19,7 @@ TitreGagnee::TitreGagnee(Date_class *ptrdateobtention, std::string nomdutit) {
     this->nomDuTitre = std::move(nomdutit);
 }
 
+TitreGagnee::~TitreGagnee() {
+    delete ptrDateDObtention;
+}
+

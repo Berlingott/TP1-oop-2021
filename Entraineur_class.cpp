@@ -31,3 +31,15 @@ void Entraineur_class::ajouterUnTitre(TitreGagnee *ptrtitre) {
 int Entraineur_class::getNombreDeTitreDeLentraineur() {
     return Palmares.size();
 }
+
+Entraineur_class::~Entraineur_class() {
+    TitreGagnee* ptrtitre;
+    int size;
+
+    size = Palmares.size();
+    for (int i = 0; i < size; ++i) {
+        ptrtitre = Palmares[0];
+        delete ptrtitre;
+        Palmares.erase(Palmares.begin());
+    }
+}

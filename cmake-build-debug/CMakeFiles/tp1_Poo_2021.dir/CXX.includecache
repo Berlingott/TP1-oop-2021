@@ -6,8 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/Users/simonduchesne/Desktop/tp1 Poo 2021/AffichageDesMenu_class.h
-iostream
+/Users/simonduchesne/Desktop/tp1 Poo 2021/Club_class.cpp
+Club_class.h
+/Users/simonduchesne/Desktop/tp1 Poo 2021/Club_class.h
+utility
 -
 
 /Users/simonduchesne/Desktop/tp1 Poo 2021/Club_class.h
@@ -34,53 +36,23 @@ Stade_class.h
 string
 -
 
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.h
-string
--
-TitreGagnee.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/TitreGagnee.h
-vector
--
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/InformationMembreEffectifDuClub_class.h
-Joueur_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.h
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.h
-string
--
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.h
-vector
--
-Joueur_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.h
-Club_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Club_class.h
+/Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.cpp
 Entraineur_class.h
 /Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.h
-Stade_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Stade_class.h
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/LogigueMenu_class.cpp
-LogigueMenu_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/LogigueMenu_class.h
-
-/Users/simonduchesne/Desktop/tp1 Poo 2021/LogigueMenu_class.h
-AffichageDesMenu_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/AffichageDesMenu_class.h
-LigueSportive_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/LigueSportive_class.h
-Joueur_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.h
-iostream
+utility
 -
-InformationMembreEffectifDuClub_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/InformationMembreEffectifDuClub_class.h
-Stade_class.h
-/Users/simonduchesne/Desktop/tp1 Poo 2021/Stade_class.h
+
+/Users/simonduchesne/Desktop/tp1 Poo 2021/Entraineur_class.h
+string
+-
 TitreGagnee.h
 /Users/simonduchesne/Desktop/tp1 Poo 2021/TitreGagnee.h
+vector
+-
+
+/Users/simonduchesne/Desktop/tp1 Poo 2021/Joueur_class.h
+string
+-
 
 /Users/simonduchesne/Desktop/tp1 Poo 2021/Stade_class.h
 string

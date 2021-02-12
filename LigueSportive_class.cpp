@@ -56,4 +56,42 @@ void LigueSportive_class::supprimerUnClubDuRegistre(int positionDansregistre) {
     repertoireClub_vector.erase (repertoireClub_vector.begin()+positionDansregistre);
 }
 
+LigueSportive_class::~LigueSportive_class() {
+    int size;
+    //std::vector<Joueur_class*> repertoireJoeur_vector;
+   // std::vector<Club_class*> repertoireClub_vector;
+  //  std::vector<Entraineur_class*> repertoireEntraineur_vector;
+  //  std::vector<Stade_class*> repertoireStade_vector;
+
+    Joueur_class* ptrjoueur;
+    Club_class* ptrclub;
+    Entraineur_class* ptrentraineur;
+    Stade_class* ptrstade;
+
+    size = repertoireClub_vector.size();
+    for (int i = 0; i < size; ++i) {
+        ptrclub = repertoireClub_vector[0];
+        delete ptrclub;
+        repertoireClub_vector.erase(repertoireClub_vector.begin());
+    }
+    size = repertoireJoeur_vector.size();
+    for (int i = 0; i < size; ++i) {
+        ptrjoueur = repertoireJoeur_vector[0];
+        delete ptrjoueur;
+        repertoireJoeur_vector.erase(repertoireJoeur_vector.begin());
+    }
+    size = repertoireEntraineur_vector.size();
+    for (int i = 0; i < size; ++i) {
+        ptrentraineur= repertoireEntraineur_vector[0];
+        delete ptrentraineur;
+        repertoireEntraineur_vector.erase(repertoireEntraineur_vector.begin());
+    }
+    size = repertoireStade_vector.size();
+    for (int i = 0; i < size; ++i) {
+        ptrstade = repertoireStade_vector[0];
+        delete ptrstade;
+        repertoireStade_vector.erase(repertoireStade_vector.begin());
+    }
+}
+
 
